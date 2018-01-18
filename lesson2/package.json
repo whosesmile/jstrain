@@ -1,0 +1,28 @@
+{
+  "name": "koastep",
+  "description": "This is a koa scaffold with swig as template engine.",
+  "version": "0.0.1",
+  "license": "LicenseRef",
+  "author": {
+    "name": "shuangbao.li",
+    "email": "lovemoon@yeah.net"
+  },
+  "repository": "https://github.com/whosesmile/koastep",
+  "dependencies": {
+    "koa": "^1.2.5",
+    "koa-body": "^1.6.0",
+    "koa-html-minifier": "^1.0.1",
+    "koa-router": "^5.4.0",
+    "koa-session": "^3.4.0",
+    "koa-static-cache": "^4.0.0",
+    "nunjucks": "^3.0.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">= 11.3"
+  }
+}

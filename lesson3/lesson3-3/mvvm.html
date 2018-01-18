@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MVVM</title>
+</head>
+<body>
+
+  <div id="app">
+    <p v-text="a"></p>
+    <p>{{ b.c }}</p>
+    <p>我是个好人: {{ a + b.c }}</p>
+  </div>
+
+  <script type="text/javascript" src="./observe.js"></script>
+  <script type="text/javascript" src="./watcher.js"></script>
+  <script type="text/javascript" src="./compile.js"></script>
+  <script type="text/javascript">
+    var vm = {a:1, b: { c: 3 } };
+    observe(vm);
+    var el = document.querySelector('#app');
+    compile(el, vm);
+  </script>
+</body>
+</html>
